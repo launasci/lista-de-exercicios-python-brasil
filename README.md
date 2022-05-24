@@ -4,6 +4,7 @@ Objetivo desse repositório é ajudar alunos aprendendo lógica de programação
 Esse repositório contém testes para os [exercícios da wiki da Python Brasil](https://wiki.python.org.br/ListaDeExercicios)
 
 # Instruções para quem vai apenas resolver os exercícios
+
 ## Como o projeto está organizado?
 
 Os pacotes do projeto possuem o mesmo nome de cada uma das sessões da lista de exercícios.
@@ -15,14 +16,15 @@ Você deve forkar esse repositório e resolver cada exercício. Ao enviar para o
 Assim você consegue evoluir com a certeza de entender os conceitos ;)
 
 # Instruções para quem quer acrescentar exercícios no projeto
+
 ## Como contribuir para o projeto?
 
 1. Forke o esse projeto;
 2. Crie um script para cada exercício, dentro da pasta referente a seção de exercícios da Python Brasil. Use o arquivo [secao_01_estrutura_sequencial/ex_01_alo_mundo.py](secao_01_estrutura_sequencial/ex_01_alo_mundo.py) como modelo.
-3. Use o padrão de nomenclatura para os scritps `ex_dd_nome_do_arquivo`. Ou seja, comece sempre com o sufixo "ex_" seguindo do número do exercício. Assim a ordem alfabética dos arquivos ficará na mesma sequência que os exercícios da lista.
+3. Use o padrão de nomenclatura para os scritps `ex_dd_nome_do_arquivo`. Ou seja, comece sempre com o sufixo "ex\_" seguindo do número do exercício. Assim a ordem alfabética dos arquivos ficará na mesma sequência que os exercícios da lista.
 4. Crie um doctest para o exercício;
 5. Crie uma entrada no [.github/workflows/corretor_de_exercícios.yml](.github/workflows/corretor_de_exercícios.yml) para executar o teste do exercício.
-A6. Envie um pull request de volta para o projeto original [https://github.com/devpro-br/lista-de-exercicios-python-brasil](https://github.com/devpro-br/lista-de-exercicios-python-brasil).
+   A6. Envie um pull request de volta para o projeto original [https://github.com/devpro-br/lista-de-exercicios-python-brasil](https://github.com/devpro-br/lista-de-exercicios-python-brasil).
 
 Exemplo de código para testar o exercício alo_mundo.py:
 
@@ -32,20 +34,20 @@ Exemplo de código para testar o exercício alo_mundo.py:
       run: |
         python -m doctest -f secao_01_estrutura_sequencial/ex_01_alo_mundo.py
 ```
+
 A seção nome é um texto livre. Já o final da última linha aponta para o endereço completo do script, incluindo o pacote (pasta) em que ele se encontra.
 
 ## Testando localmente
-Para rodar os testes de um módulo em sua máquina, rode: 
+
+Para rodar os testes de um módulo em sua máquina, rode:
+
 ```sh
 python -m doctest -f <nome_do_pacote>/<nome_do_script>
 ```
+
 Basta substituir o <nome_do_pacote> pelo nome do pacote e <nome_do_script> pelo nome do escript.
 Exemplo para rodar os testes do primeiro exercício:
 
 ```
-python -m doctest -f secao_01_estrutura_sequencial/ex_01_alo_mundo.py 
+python -m doctest -f secao_01_estrutura_sequencial/ex_01_alo_mundo.py
 ```
-
-
-
-
