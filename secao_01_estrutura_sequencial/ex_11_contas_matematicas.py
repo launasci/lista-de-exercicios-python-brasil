@@ -22,6 +22,7 @@ Faça um Programa que peça 2 números inteiros e um número real. Calcule e mos
 
 def calcular_formulas():
     """Escreva aqui em baixo a sua solução"""
+    
     n1=int(input('Informe um número inteiro:'))
     n2=int(input('Informe um segundo número inteiro:'))
     n3=float(input('Informe um terceiro número real:'))
