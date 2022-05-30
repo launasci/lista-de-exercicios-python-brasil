@@ -33,9 +33,9 @@ def calcular_peso_excedente_e_multa():
     if peso_var >= limite:
         print(f'O peso excedente de peixes é de {excesso:.2f} kg')
         print(f'Por isso, a multa é de R$ {multa:.2f}')
-    else:
-        print(f'O peso excedente de peixes é de {excesso:.2f} kg')
-        print(f'Por isso, a multa é de R$ {multa:.2f}')
+    # else:
+    #     print(f'O peso excedente de peixes é de {excesso:.2f} kg')
+    #     print(f'Por isso, a multa é de R$ {multa:.2f}')
 
 
 
