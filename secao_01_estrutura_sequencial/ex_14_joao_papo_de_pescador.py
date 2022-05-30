@@ -30,8 +30,12 @@ def calcular_peso_excedente_e_multa():
     peso_var=float(input('Informe o kg do peixe:'))
     excesso = peso_var - limite 
     multa = excesso * 4.00
-    print(f'O peso excedente de peixes é de {excesso:.2f} kg')
-    print(f'Por isso, a multa é de R$ {multa:.2f}')
+    if peso_var >= limite:
+        print(f'O peso excedente de peixes é de {excesso:.2f} kg')
+        print(f'Por isso, a multa é de R$ {multa:.2f}')
+    else:
+        print(f'O peso excedente de peixes é de {excesso:.2f} kg')
+        print(f'Por isso, a multa é de R$ {multa:.2f}')
 
 
 

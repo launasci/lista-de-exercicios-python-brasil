@@ -21,5 +21,5 @@ def vogal_ou_consoante(letra):
     vogal='aeioU'
     if letra in vogal:
         print("'vogal'")
-    elif letra != vogal:
+    else:
         print("'consoante'")
