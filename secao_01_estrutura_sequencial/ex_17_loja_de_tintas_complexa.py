@@ -45,8 +45,8 @@ def calcular_latas_e_preco_de_tinta():
     resto=litros%18 
     latas_int=math.floor(litros/18)
     galao_rest=math.ceil(resto/3.6) 
-    latas_custo=latas_int*80
-    galao_custo=galao_rest*25
+    # latas_custo=latas_int*80
+    # galao_custo=galao_rest*25
     latas_e_galoes=((latas_int*80)+(galao_rest*25))
     resto_total=((latas_int*18)+(galao_rest*3.6))-litros 
     print(f'Você deve comprar {litros} litros de tinta.')
