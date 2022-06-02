@@ -44,7 +44,7 @@ def calcular_latas_e_preco_de_tinta():
     rest_galao=(galao*3.6)-litros
     resto=litros%18 
     latas_int=math.floor(litros/18)
-    galao_rest=math.ceil(resto/3.6)
+    galao_rest=math.ceil(resto/3.6) 
     latas_custo=latas_int*80
     galao_custo=galao_rest*25
     latas_e_galoes=((latas_int*80)+(galao_rest*25))
