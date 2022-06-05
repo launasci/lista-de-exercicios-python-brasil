@@ -48,6 +48,7 @@ python -m doctest -f <nome_do_pacote>/<nome_do_script>
 Basta substituir o <nome_do_pacote> pelo nome do pacote e <nome_do_script> pelo nome do escript.
 Exemplo para rodar os testes do primeiro exercício:
 
-```
+````
 python -m doctest -f secao_01_estrutura_sequencial/ex_01_alo_mundo.py
-```
+```'
+````
