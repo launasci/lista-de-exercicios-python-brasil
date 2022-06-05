@@ -51,6 +51,7 @@ até R$ 99999,99
 """
 
 
+ 
 def calcular_salario_liquido(valor_hora: float, horas_trabalhadas: int):
     """Escreva aqui em baixo a sua solução"""
     salario_bruto= valor_hora * horas_trabalhadas
@@ -62,6 +63,14 @@ def calcular_salario_liquido(valor_hora: float, horas_trabalhadas: int):
       fgts= salario_bruto * 0.11
       total_descontos=  ir + inss + sind
       salario_liquido= salario_bruto - total_descontos
+
+      print(f'Salário Bruto: (R$ {valor_hora:.2f} * {horas_trabalhadas})     : R$   {salario_bruto:.2f}' )
+      print(f'(-) IR (0%)'.ljust(34),f': R$  {ir:>7.2f}')
+      print(f'(-) INSS (10%)' .ljust(34), f': R$  {inss:>7.2f}')
+      print(f'(-) Sindicato (3%)'.ljust(34),f': R$  {sind:>7.2f}')
+      print(f'FGTS (11%)' .ljust(34), f': R$  {fgts:>7.2f}')
+      print(f'Total de descontos' .ljust(34),f': R$  {total_descontos:>7.2f}')
+      print(f'Salário Liquido ' .ljust(34), f': R$  {salario_liquido:>7.2f}')
     
     elif salario_bruto <= 1500:
       ir = salario_bruto * 0.05 
@@ -70,6 +79,16 @@ def calcular_salario_liquido(valor_hora: float, horas_trabalhadas: int):
       fgts= salario_bruto * 0.11
       total_descontos=  ir + inss + sind
       salario_liquido= salario_bruto - total_descontos
+
+      print(f'Salário Bruto: (R$ {valor_hora:.2f} * {horas_trabalhadas})     : R$  {salario_bruto:.2f}' )
+      print(f'(-) IR (5%)'.ljust(34),f': R$  {ir:>7.2f}')
+      print(f'(-) INSS (10%)' .ljust(34), f': R$  {inss:>7.2f}')
+      print(f'(-) Sindicato (3%)'.ljust(34),f': R$  {sind:>7.2f}')
+      print(f'FGTS (11%)' .ljust(34), f': R$  {fgts:>7.2f}')
+      print(f'Total de descontos' .ljust(34),f': R$  {total_descontos:>7.2f}')
+      print(f'Salário Liquido ' .ljust(34), f': R$  {salario_liquido:>7.2f}')
+
+      # print(f"(-) IR ({ir*100:.0f}%)".ljust(34), f"{': R$'} {ir*sal_bruto:>8.2f}")
     
     elif salario_bruto <= 2500:
       ir = salario_bruto * 0.10
@@ -78,7 +97,16 @@ def calcular_salario_liquido(valor_hora: float, horas_trabalhadas: int):
       fgts= salario_bruto * 0.11
       total_descontos=  ir + inss + sind
       salario_liquido= salario_bruto - total_descontos
-    
+
+      print(f'Salário Bruto: (R$ {valor_hora:.2f} * {horas_trabalhadas})    : R$  {salario_bruto:.2f}' )
+      print(f'(-) IR (10%)'.ljust(34),f': R$  {ir:>7.2f}')
+      print(f'(-) INSS (10%)' .ljust(34), f': R$  {inss:>7.2f}')
+      print(f'(-) Sindicato (3%)'.ljust(34),f': R$  {sind:>7.2f}')
+      print(f'FGTS (11%)' .ljust(34), f': R$  {fgts:>7.2f}')
+      print(f'Total de descontos' .ljust(34),f': R$  {total_descontos:>7.2f}')
+      print(f'Salário Liquido ' .ljust(34), f': R$  {salario_liquido:>7.2f}')
+
+  
     elif salario_bruto > 2500:
       ir = salario_bruto * 0.20
       inss = salario_bruto * 0.10
@@ -86,13 +114,14 @@ def calcular_salario_liquido(valor_hora: float, horas_trabalhadas: int):
       fgts= salario_bruto * 0.11
       total_descontos=  ir + inss + sind
       salario_liquido= salario_bruto - total_descontos
-    
-    print(f'Salário Bruto: (R$ {valor_hora:.2f} * {horas_trabalhadas})   : R$ {salario_bruto:.2f}' )
-    print(f'(-) IR (20%)                       : R$  {ir:.2f}')
-    print(f'(-) INSS (10%)                     : R$  {inss:.2f}')
-    print(f'(-) Sindicato (3%)                 : R$   {sind:.2f}')
-    print(f'FGTS (11%)                         : R$  {fgts:.2f}')
-    print(f'Total de descontos                 : R$  {total_descontos:.2f}')
-    print(f'Salário Liquido                    : R$ {salario_liquido:.2f}')
 
+      print(f'Salário Bruto: (R$ {valor_hora:.2f} * {horas_trabalhadas})   : R$ {salario_bruto:.2f}' )
+      print(f'(-) IR (20%)'.ljust(34),f': R$  {ir:>7.2f}')
+      print(f'(-) INSS (10%)' .ljust(34), f': R$  {inss:>7.2f}')
+      print(f'(-) Sindicato (3%)'.ljust(34),f': R$  {sind:>7.2f}')
+      print(f'FGTS (11%)' .ljust(34), f': R$  {fgts:>7.2f}')
+      print(f'Total de descontos' .ljust(34),f': R$  {total_descontos:>7.2f}')
+      print(f'Salário Liquido ' .ljust(34), f': R$ {salario_liquido:>7.2f}')
+    
+# ----- feito ------
         

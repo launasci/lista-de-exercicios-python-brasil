@@ -33,3 +33,25 @@ Caso contrário, ele será classificado como "Inocente".
 
 def investivar(telefonou: str, estava_no_local: str, mora_perto: str, devia: str, trabalhou: str, ):
     """Escreva aqui em baixo a sua solução"""
+    perguntas = 0
+    if telefonou.lower() ==  'sim':
+      perguntas += 1
+    if estava_no_local.lower() ==  'sim':
+      perguntas += 1
+    if mora_perto.lower() ==  'sim':
+      perguntas += 1
+    if devia.lower() ==  'sim':
+      perguntas += 1
+    if trabalhou.lower() ==  'sim':
+      perguntas += 1
+
+    if perguntas == 5:
+      print("'Assassino'")
+    elif perguntas == 3 or perguntas == 4:
+      print("'Cúmplice'")
+    elif perguntas == 2:
+      print("'Suspeito'")
+    else:
+      print("'Inocente'")
+    
+  # --- feito ---

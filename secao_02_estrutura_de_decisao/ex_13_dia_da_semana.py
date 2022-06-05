@@ -47,5 +47,5 @@ def calcular_dia_da_semana(numero: int):
     else:
         print("'Dia Inválido'")
         
-  
+#   --- feito ----
 

@@ -19,6 +19,17 @@ arredondamento.
     'Decimal'
 """
 
-
+import math
 def decidir_se_eh_inteiro_ou_decimal(valor: str) -> str:
     """Escreva aqui em baixo a sua solução"""
+    print("'", end="")
+    print(f'{"Inteiro" if math.floor(float(valor)) == float(valor) else "Decimal"}', end="")
+    print("'")
+
+    # if math.floor(float(valor)) == float(valor):
+    #     print("'Inteiro'") 
+    # else:
+    #     print("'Decimal'")
+
+    # -- feito de duas formas --
+
