@@ -54,7 +54,7 @@ def calcular_aumento(salario: float):
       valor_aumento= salario * aumento_porcentual
       novo_salario= valor_aumento+salario
 
-    elif salario <= 780:
+    elif salario <= 700:
       aumento_porcentual= 0.15
       aumento_porcentual_real= aumento_porcentual*100
       valor_aumento= salario * aumento_porcentual

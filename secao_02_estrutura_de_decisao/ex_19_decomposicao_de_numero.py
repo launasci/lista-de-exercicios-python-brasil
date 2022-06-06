@@ -50,6 +50,7 @@ Observando os termos no plural a colocação do "e", da vírgula entre outros. E
 """
 
 import math
+
 def decompor_numero(numero: int):
     """Escreva aqui em baixo a sua solução"""
     if numero >= 1000:
@@ -75,4 +76,4 @@ def decompor_numero(numero: int):
         print (f'{unidade} unidade{"s" if unidade>1 else ""}', end='')
     print("'")
     
-# --- feito ---
+# --- feito ---+

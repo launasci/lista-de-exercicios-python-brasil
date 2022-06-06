@@ -59,3 +59,54 @@ Mostre o restultado com duas casas decimais
 
 def calcular_preco_da_compra(kilos_de_morango: int, kilos_de_maca: int):
     """Escreva aqui em baixo a sua solução"""
+    # Uma fruteira está vendendo frutas com a seguinte tabela de preços:
+
+    #                     Até 5 Kg           Acima de 5 Kg
+    # Morango         R$ 2,50 por Kg          R$ 2,20 por Kg
+    # Maçã            R$ 1,80 por Kg          R$ 1,50 por Kg
+
+    # Se o cliente comprar mais de 8 Kg em frutas ou o valor total da compra ultrapassar R$ 25,00,
+    # receberá ainda um desconto de 10% sobre este total.
+    # Escreva um algoritmo para ler a quantidade (em Kg) de morangos e a quantidade (em Kg) de maças adquiridas e escreva o
+    # valor a ser pago pelo cliente.
+    # Mostre o restultado com duas casas decimais  
+
+    preco_maca = 1.50
+    preco_morango = 2.20
+    desconto = 0.00
+
+    if kilos_de_maca <= 5:
+        preco_maca = 1.80
+    if kilos_de_morango <= 5:
+        preco_morango = 2.50
+
+    kilos_total_frutas = kilos_de_maca + kilos_de_morango
+    preco_total_frutas = (kilos_de_maca*preco_maca) + (kilos_de_morango*preco_morango)
+
+    if kilos_total_frutas > 8 or preco_total_frutas > 25:
+        desconto = 0.10
+
+    valor_desconto = preco_total_frutas * desconto
+
+    if kilos_de_morango > 0:
+        print(f'(+)  Morango  - valor:  R$ {kilos_de_morango*preco_morango:>5.2f} - quantidade:  {kilos_de_morango} kg - preço: R$ {preco_morango:.2f}/kg')
+    
+    if kilos_de_maca > 0:
+        print(f'(+)  Maça     - valor:  R$ {kilos_de_maca*preco_maca:>5.2f} - quantidade:  {kilos_de_maca} kg - preço: R$ {preco_maca:.2f}/kg')
+
+    print(f'(-)  Desconto - valor:  R$ {valor_desconto:>5.2f}')
+    print(f'          Valor Total:  R$ {preco_total_frutas - valor_desconto:>5.2f}')
+
+    
+    
+#    espacamento = 6
+    
+
+    
+
+    
+    
+         
+    
+    
+    
