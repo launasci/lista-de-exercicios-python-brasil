@@ -34,3 +34,15 @@ até que o usuário informe um valor válido.
 
 def obter_numero_valido():
     """Escreva aqui em baixo a sua solução"""
+#    Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o valor seja inválido e continue pedindo
+#    até que o usuário informe um valor válido.
+     
+    numero=('0','1','2','3','4','5','6','7','8','9','10')
+    nota=(input('Digite um número de 0 a 10:'))
+    while nota not in numero:
+        print(f'Número inválido: {nota}')
+        nota=(input('Digite um número de 0 a 10:'))
+    else:
+        print(f'{nota}')
+    
+    # ----feito---
