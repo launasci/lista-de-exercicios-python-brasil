@@ -48,7 +48,7 @@ Observando os termos no plural a colocação do "e", da vírgula entre outros. E
     '7 = 7 unidades'
 
 """
-
+# ((retorno a) if (condição) else (retorno b))
 import math
 
 def decompor_numero(numero: int):
@@ -78,4 +78,3 @@ def decompor_numero(numero: int):
     
 # --- feito ---+
 
-# ((retorno a) if (condição) else (retorno b))
