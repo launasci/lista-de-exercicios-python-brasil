@@ -61,9 +61,9 @@ def decompor_numero(numero: int):
         print("'O número precisa ser positivo'")
         return
 
-    centena = math.floor(numero/100)
-    dezena = math.floor((numero - (centena*100))/10)
-    unidade = math.floor(numero-(centena*100)-(dezena*10))
+    centena = (numero//100)
+    dezena = (numero - (centena*100))//10
+    unidade = (numero-(centena*100)-(dezena*10))
 
     print("'", end='')
     print(f'{numero} = ', end='')
@@ -77,3 +77,5 @@ def decompor_numero(numero: int):
     print("'")
     
 # --- feito ---+
+
+# ((retorno a) if (condição) else (retorno b))
