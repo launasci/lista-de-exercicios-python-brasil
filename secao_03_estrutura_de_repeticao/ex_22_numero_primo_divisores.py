@@ -50,3 +50,17 @@ divisível.
 
 def eh_primo(n: int) -> bool:
     """Escreva aqui em baixo a sua solução"""
+    div = 0 
+    cont = []
+    for numero in range(1, n+1):
+        if n % numero == 0:
+            div += 1
+            cont.append(numero)
+    if div == 2:
+        print (True)
+    else:
+        for numero in cont:
+            if numero != 1 and numero != n:
+                print(f'É divisível por {numero}')
+        print(False)
+# -- feito --

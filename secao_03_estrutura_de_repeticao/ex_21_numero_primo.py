@@ -37,5 +37,18 @@ divisível somente por ele mesmo e por 1.
 """
 
 
+from calendar import c
+from xmlrpc.client import FastUnmarshaller
+
+
 def eh_primo(n: int) -> bool:
     """Escreva aqui em baixo a sua solução"""
+    div = 0 
+    for numero in range(1, n+1):
+        if n % numero == 0:
+            div += 1
+    if div == 2:
+        print (True)
+    else:
+        print(False)
+# -- feito -- 
