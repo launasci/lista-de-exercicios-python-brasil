@@ -23,5 +23,8 @@ Ex.: 5!=5.4.3.2.1=120
 import math
 def calcular_fatorial(n: int) -> int:
     """Escreva aqui em baixo a sua solução"""
-    print(math.factorial(n))
+    fatorial = 1
+    for i in range(1, n+1):
+        fatorial *= i
+    print(fatorial)
 # -- feito --

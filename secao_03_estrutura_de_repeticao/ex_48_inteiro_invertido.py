@@ -19,5 +19,15 @@ Exemplo:
 """
 
 
+from audioop import reverse
+
+
 def inverter_inteiro(numero):
     """Escreva aqui em baixo a sua solução"""
+    numero = str(numero)[:: -1]
+    print(numero)
+    
+    # -- feito --
+    # Então, quando você faz numero[::-1], começa do final para o primeiro, 
+    # pegando cada elemento. Então inverte numero. 
+    # Isso também é aplicável para listas/tuplas.

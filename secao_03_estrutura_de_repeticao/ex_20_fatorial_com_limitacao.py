@@ -39,3 +39,7 @@ def calcular_fatorial(n: int) -> int:
          print(math.factorial(n))
          
 # -- feito --
+    # fatorial = 1 --> UnboundLocalError: local variable 'fatorial' referenced before assignment
+    # for v in range(1, n+1):
+    #     fatorial *= v
+    # print(fatorial)
