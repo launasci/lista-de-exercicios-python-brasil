@@ -16,7 +16,9 @@ Mostre a média com duas casas decimais.
 
 def calcular_soma_e_media(n1: int, n2: int, n3: int, n4: int, n5: int) -> str:
     """Escreva aqui em baixo a sua solução"""
-    soma= n1 + n2 + n3 + n4 + n5 
-    media= soma/5 
-    print(f"'Soma: {soma}, Média: {media:.2f}'")
+    numeros = (n1, n2, n3, n4, n5)
+    soma = 0 
+    for n in numeros:
+        soma += n 
+    print(f"'Soma: {soma}, Média: {soma/5:.2f}'")
 # -- feito --

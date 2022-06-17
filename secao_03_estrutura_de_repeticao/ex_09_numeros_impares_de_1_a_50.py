@@ -21,4 +21,15 @@ def calcular_numeros_impares_de_1_a_50() -> str:
         else:
             print (f"{i}, ", end='')
 
-    # -- feito --
+    # # -- feito --
+
+    # i = 0
+    # while i <= 50:
+    #     if i%2 != 0:
+    #         if i == 1: 
+    #             print(f"'{i}", end =', ')
+    #         elif i == 49:
+    #             print(f"{i}'", end ='')
+    #         else:
+    #             print(i, end=', ')
+    #     i += 1

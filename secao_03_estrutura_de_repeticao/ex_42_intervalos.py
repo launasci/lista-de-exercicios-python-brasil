@@ -40,3 +40,20 @@ A entrada de dados deverá terminar quando for lido um número negativo.
 
 def listar_numeros_para_avaliacao():
     """Escreva aqui em baixo a sua solução"""
+    intervalos = {0:25, 26:50, 51:75, 76:100}
+    lista = []
+    numero = 0
+    while numero >= 0:
+        numero= int(input('Digite um número'))
+        lista.append(numero)
+    for i, f in intervalos.items():
+        soma = 0
+        for x in lista:
+            if x in range(i, f+1):
+                soma+= 1
+        if i == 0:
+            print(f'{soma} número(s) entre o intervalo de zero a {f}')
+        elif soma > 0:
+            print(f'{soma} número(s) entre o intervalo de {i} a {f}')
+    # -- feito --
+

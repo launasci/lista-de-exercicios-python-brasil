@@ -25,6 +25,42 @@ Mostre os valores com uma casa decimail
     A média de acidentes total nas cidades com menos de 150 mil carros é de 900.0 acidentes.
 """
 
+from statistics import mean
 
 def calcular_estatisticas(*cidades):
     """Escreva aqui em baixo a sua solução"""
+    cidade_list = []
+    veiculos_list = []
+    acidentes_list = []
+    cidades_menores = []
+    numeros_acidentes = []
+    acidentes_cidades = []
+
+    for cidade, veiculos, acidentes in cidades:
+        cidade_list.append(cidade)
+        veiculos_list.append(veiculos)
+        acidentes_list.append(acidentes)
+        num_acidentes = (acidentes/veiculos)*1000
+        numeros_acidentes.append(num_acidentes)
+        if veiculos <= 150000:
+            cidades_menores.append(acidentes)
+
+    acidentes_cidades = {acidentes:cidade for cidade, acidentes in zip(cidade_list, numeros_acidentes)}
+
+    maior_indice = max(acidentes_cidades)
+    menor_indice = min(acidentes_cidades)
+    mais_acidentes = acidentes_cidades[maior_indice]
+    menos_acidentes = acidentes_cidades[menor_indice]
+    media = mean(veiculos_list)
+    media_cidades_menores = mean(cidades_menores)
+
+    print(f'O maior índice de acidentes é de {mais_acidentes}, com {maior_indice:.1f} acidentes por mil carros.')
+    print(f'O menor índice de acidentes é de {menos_acidentes}, com {menor_indice:.1f} acidentes por mil carros.')
+    print(f'O média de veículos por cidade é de {media}.')
+    print(f'A média de acidentes total nas cidades com menos de 150 mil carros é de {media_cidades_menores:.1f} acidentes.')
+
+#  -- feito com ajuda da aula --
+
+    
+
+
