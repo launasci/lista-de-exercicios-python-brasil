@@ -37,10 +37,6 @@ divisível somente por ele mesmo e por 1.
 """
 
 
-from calendar import c
-from xmlrpc.client import FastUnmarshaller
-
-
 def eh_primo(n: int) -> bool:
     """Escreva aqui em baixo a sua solução"""
     div = 0 

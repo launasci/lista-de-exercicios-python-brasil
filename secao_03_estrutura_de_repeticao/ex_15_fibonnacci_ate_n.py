@@ -27,18 +27,53 @@ def calcular_serie_de_fibonacci(n: int) -> str:
     """Escreva aqui em baixo a sua solução"""
     ultimo = 1
     penultimo = 1
-    termo = 1
+    soma = 1
     if n == 1:
-        print("'1'")
+        print(f"'{n}'")    
     else:
         n -= 1
-        print("'1", end=', ')
-        for batata in range(n):
-            if batata == n-1:
-                print(f"{termo}'")
+        print("'1", end=", ")
+        for numero in range(n):
+            if numero == n -1:
+                print(f"{soma}'", end="")
             else:
-                print(termo, end=', ')
-                termo = penultimo + ultimo
+                print(f"{soma}", end=", ")
+                soma = ultimo + penultimo
                 ultimo = penultimo
-                penultimo = termo
-#  --- feito ---
+                penultimo = soma
+
+
+#     ultimo = 1
+#     penultimo = 1
+#     termo = 1
+#     if n == 1:
+#         print("'1'")
+#     else:
+#         n -= 1
+#         print("'1", end=', ')
+#         for batata in range(n):
+#             if batata == n-1:
+#                 print(f"{termo}'")
+#             else:
+#                 print(termo, end=', ')
+#                 termo = penultimo + ultimo
+#                 ultimo = penultimo
+#                 penultimo = termo
+# #  --- feito -
+
+    # n1 = 1
+    # n2 = 1
+    # n3 = 1
+    # if n == 1:
+    #     print (f"'{n}'")
+    # else:
+    #     n -= 1
+    #     print("'1", end=", ")
+    #     for i in range (n):
+    #         if i == n-1:
+    #             print(f"{n3}'", end='') 
+    #         else:
+    #             print (f"{n3}", end=", ")
+    #             n3 = n1 + n2
+    #             n1 = n2
+    #             n2 = n3
